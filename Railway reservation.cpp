@@ -20,20 +20,20 @@ void freeMemory(Passenger*& head);
 
 int main() {
     int totalSeats = 30;
-    int* seats = new int[totalSeats]; // Dynamic array for seat status
+    int* seats = new int[totalSeats]; 
     for (int i = 0; i < totalSeats; i++)
         seats[i] = 0; // 0 = available
 
-    Passenger* head = nullptr; // linked list head
+    Passenger* head = nullptr; 
 
     int choice;
     do {
         cout << "\n===== Railway Reservation System =====\n";
-        cout << "1. Book Ticket\n";
-        cout << "2. Cancel Ticket\n";
-        cout << "3. View Train Status\n";
-        cout << "4. View Passenger List\n";
-        cout << "5. Exit\n";
+        cout << "1. Book Ticket"<<endl;
+        cout << "2. Cancel Ticket"<<endl;
+        cout << "3. View Train Status"<<endl;
+        cout << "4. View Passenger List"<<endl;
+        cout << "5. Exit"<<endl;
         cout << "Enter your choice: ";
         cin >> choice;
 
